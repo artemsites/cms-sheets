@@ -30,6 +30,13 @@ DATABASE_URL="mysql://username:password@server.com:3306/dbname?serverVersion=5.7
 ## Copy Google Table (Sheet) to your drive 
 https://docs.google.com/spreadsheets/d/19NC3QrrWEvAwljyhzKF9LqCds4gtOvP5OAZUqqd3k-w/edit?usp=sharing 
 
+## Composer update vendors libs
+```
+composer update 
+# example at shared hosting (beget): 
+php8.3 $(which ~/.local/bin/composer) update 
+```
+
 ## Migration tables to your database 
 ```
 php bin/console doctrine:migrations:migrate 
